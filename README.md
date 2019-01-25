@@ -59,5 +59,24 @@ In other words the text should either be a reply to one of v's text from
 any user or it should be an unseen text from a publisher that v is currently
 subscribed to.
 The texts should be output sorted by time. Before a user has performed
-any READ we can assume that t􀀀1 has some default value like -1 which is
+any READ we can assume that t1 has some default value like -1 which is
 smaller than any allowed timestamp.
+
+##  Actions:
+ PUBLISH,t,uid,NEW,text,tid: User uid publish new text at time t
+having text id tid.
+
+ PUBLISH,t,uid,REPOST(ptid),tid: User uid repost existing text
+represented by text id ptid at time t. The repost text is assigned
+a new text id tid.
+
+ PUBLISH,t,uid,REPLY(ptid),text,tid: User uid reply to an exist-
+ing text represented by text id ptid at time t. The reply text is
+assigned a new text id tid.
+
+ SUBSCRIBE,t,uid,pid: User uid subscribe to a publisher pid at time
+t.
+ UNSUBSCRIBE,t,uid,pid: User uid unsubscribe to a publisher pid at
+time t.
+
+ READ,t,uid: User uid reads text at time t.
