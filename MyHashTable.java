@@ -164,7 +164,7 @@ class MyHashTable<K, V>
   
         // If load factor goes beyond threshold, then 
         // double hash table size 
-       /* if ((1.0*size)/numBuckets >= 0.7) 
+        if ((1.0*size)/numBuckets >= 0.7) 
         { 
             ArrayList<HashNode<K, V>> temp = bucketArray; 
             bucketArray = new ArrayList<>(); 
@@ -181,6 +181,6 @@ class MyHashTable<K, V>
                     headNode = headNode.next; 
                 } 
             } 
-        } */
+        } 
     }
 }
