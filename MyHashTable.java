@@ -5,7 +5,7 @@
  *    Author@_Alok_Kumar
  *    Indian Institute of Technology(IIT) Delhi
  *
- *    To Understand the project in enough detail please go to ReadMe file of Project1
+ *    To Understand the project in enough detail please go to ReadMe file of Project 3
  *     and Visit under the section under the name of this class.
  */
 
